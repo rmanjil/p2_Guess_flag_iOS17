@@ -11,9 +11,15 @@ struct ContentView: View {
     @State private var showAlert = false
     var body: some View {
         ZStack{
-            Color.red
-            Text("Content")
-                .background(.blue)
+            VStack(spacing: 0) {
+                Color.red
+                Color.blue
+            }
+            Text("Your Content")
+                .foregroundStyle(.secondary)
+                .padding(50)
+                .background(.ultraThinMaterial)
+                
         }
         .ignoresSafeArea()
     }
