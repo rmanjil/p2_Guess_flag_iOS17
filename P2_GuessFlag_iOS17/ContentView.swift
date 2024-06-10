@@ -12,9 +12,10 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             Color.red
-                .frame(minWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: 200)
             Text("Content")
+                .background(.blue)
         }
+        .ignoresSafeArea()
     }
 }
 
