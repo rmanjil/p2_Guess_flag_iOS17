@@ -10,13 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var showAlert = false
     var body: some View {
-        Button {
-            print("Button is Tapped")
-        } label: {
-            Text("Tap me!")
-                .padding()
-                .foregroundStyle(.white)
-                .background(.red)
+        VStack {
+            Image(systemName: "gear")
         }
     }
     
