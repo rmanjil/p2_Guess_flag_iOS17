@@ -10,11 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @State private var showAlert = false
     var body: some View {
-        Image(decorative: "lion").resizable()
-    }
-    
-    func executeDelete() {
-        print("Now deleting...")
+       Image(systemName: "pencil.circle")
+            .foregroundStyle(.red)
+            .font(.largeTitle)
     }
 }
 
