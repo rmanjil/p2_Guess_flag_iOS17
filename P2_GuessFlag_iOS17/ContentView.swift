@@ -10,9 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var showAlert = false
     var body: some View {
-        VStack {
-            Image(systemName: "gear")
-        }
+        Image(decorative: "lion").resizable()
     }
     
     func executeDelete() {
