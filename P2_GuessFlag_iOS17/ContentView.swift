@@ -10,7 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @State private var showAlert = false
     var body: some View {
-        AngularGradient(colors: [.red, .yellow, .green, .blue, .purple, .red], center: .center)
+       Text("Your Content")
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
+            .foregroundColor(.white)
+            .background(.indigo.gradient)
     }
 }
 
