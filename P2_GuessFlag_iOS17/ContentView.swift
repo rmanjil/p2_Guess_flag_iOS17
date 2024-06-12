@@ -10,9 +10,15 @@ import SwiftUI
 struct ContentView: View {
     @State private var showAlert = false
     var body: some View {
-       Image(systemName: "pencil.circle")
-            .foregroundStyle(.red)
-            .font(.largeTitle)
+        Button {
+            print("Button is Tapped")
+        } label: {
+             Image(systemName: "pencil.circle")
+        }
+    }
+    
+    func executeDelete() {
+        print("Now deleting...")
     }
 }
 
