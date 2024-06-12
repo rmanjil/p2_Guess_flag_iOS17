@@ -10,10 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @State private var showAlert = false
     var body: some View {
-        Button {
+        
+        Button("Edit", systemImage: "pencil") {
             print("Button is Tapped")
-        } label: {
-             Image(systemName: "pencil.circle")
         }
     }
     
