@@ -10,10 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @State private var showAlert = false
     var body: some View {
-       Text("Your Content")
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
-            .foregroundColor(.white)
-            .background(.indigo.gradient)
+        Button("Delete selection", role: .destructive, action: executeDelete)
+    }
+    
+    func executeDelete() {
+        print("Now deleting...")
     }
 }
 
